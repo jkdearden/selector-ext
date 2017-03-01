@@ -1,0 +1,20 @@
+.mouseVisited {
+  background-color: #bcd5eb !important;
+  outline: 1px solid #5166bb !important;
+}
+
+.seleniumSelectors {
+  z-index: 99;
+  background-color: gainsboro;
+  position: fixed;
+  top: 5px;
+  right: 5px;
+}
+
+.uniqueSelector {
+  background-color: springgreen;
+}
+
+.repeatSelector {
+  background-color: tomato;
+}

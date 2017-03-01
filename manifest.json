@@ -1,0 +1,36 @@
+{
+  "name": "selectorext",
+  "description": "get selenium selectors",
+  "version": "1.0",
+  "manifest_version": 2,
+  
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "css": ["selector.css"],
+      "js": ["selector.js"],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "commands": {
+    "toggleInspector": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+K",
+        "mac": "Command+Shift+K"
+      },
+      "description": "Toggle the element inspector"
+    },
+    "freezeInspector": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+L",
+        "mac": "Command+Shift+L"
+      },
+      "description": "freeze the elements in the inspector"
+    }
+  }
+}
